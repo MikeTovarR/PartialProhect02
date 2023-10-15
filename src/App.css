@@ -1,4 +1,7 @@
-.App {
+.main-page {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto; /* Centra el contenido en la página */
 }
 
