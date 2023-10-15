@@ -1,0 +1,11 @@
+.links-container{
+    height: 100vh;
+    /* width: 20vw; */
+}
+
+.links-part{
+    height: 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
