@@ -1,0 +1,14 @@
+.container {
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 20px; /* Espacio entre columnas */
+    max-width: 1200px; /* Ajusta el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el contenido en la página */
+  }
+  
+  .main-info {
+    border: 1px solid #ccc; /* Agrega bordes para visualizar las columnas */
+    padding: 20px;
+    text-align: center; /* Centra el contenido dentro de las columnas */
+  }
+  
