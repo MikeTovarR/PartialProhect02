@@ -1,5 +1,5 @@
 import './LinksSection.css';
-import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function LinksSection({data}){
     const {name, rotation, mainColor, secondaryColor} = data;
@@ -7,9 +7,24 @@ function LinksSection({data}){
 
     return(
         <div className="links-container" style={{backgroundColor: mainColor, color:secondaryColor}}>
-            <div className='links-part' style={{transform: `rotate(${rotation}deg)`}}><h2>{name}</h2></div>
-            <div className='links-part' style={{transform: `rotate(${rotation}deg)`}}><h2>Resume</h2></div>
-            <div className='links-part' style={{transform: `rotate(${rotation}deg)`}}><h2>Projects</h2></div>
+            <Link className='links-part' to={'/Resume'}>
+                <div  >
+                    <h2 style={{backgroundColor: mainColor, color:secondaryColor, 
+                            transform: `rotate(${rotation}deg)`,}}>{name}</h2>
+                </div>
+            </Link>
+            <Link to={'/Resume'} className='links-part'>
+                <div >
+                    <h2 style={{backgroundColor: mainColor, color:secondaryColor, 
+                            transform: `rotate(${rotation}deg)`,}}>Resume</h2>
+                </div>
+            </Link>
+            <Link className='links-part' to={'/Resume'}>
+                <div >
+                    <h2 style={{backgroundColor: mainColor, color:secondaryColor, 
+                            transform: `rotate(${rotation}deg)`,}}>Projects</h2>
+                </div>
+            </Link>
         </div>
     )
 };
