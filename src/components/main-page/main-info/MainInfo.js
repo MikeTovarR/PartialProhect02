@@ -1,5 +1,5 @@
 import './MainInfo.css';
-import SocialButtons from '../social-buttons/SocialButtons';
+import SocialButtons from '../../social-buttons/SocialButtons';
 
 function MainInfo({data}){
     const {name, career, mainColor, secondaryColor} = data;
@@ -31,7 +31,7 @@ function MainInfo({data}){
             </div>
             <div style={{position: 'relative', 'maxHeight': '70%'}} >
                 <img id='presentation-image'
-                src={require(`../../../images/${name}/${name}PNG.png`)} />
+                src={require(`../../../media-sources/${name}/${name}PNG.png`)} />
             </div>
             <div>
                 <h2>{career} Student</h2>
