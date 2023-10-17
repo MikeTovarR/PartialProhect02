@@ -1,0 +1,9 @@
+.main-page {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto; /* Centers content in page */
+  position: absolute;
+  text-transform: uppercase;
+}
+

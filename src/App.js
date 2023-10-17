@@ -1,21 +1,23 @@
 import './App.css';
-import MainInfo from './components/MainInfo/MainInfo';
-import LinksSection from './components/LinksSection/LinksSection';
+import Home from './pages/Home';
+import Resume from './pages/Resume';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
-function App() {
-  const color1 = "#75c5aa";
-  const color2 = "#ffffff";
-  const fabian = {name: 'Fabian', career: 'Animation', mainColor: color1, secondaryColor: color2};
-  const mike = {name: 'Mike', career: 'Software', mainColor: color2, secondaryColor: color1};
+export default function App(){
 
-  return (
-    <div className="main-page">
-      <LinksSection data={{name: 'Fabian', rotation: 270, mainColor: color2, secondaryColor: color1}}/>
-      <MainInfo data={fabian}/>
-      <MainInfo data={mike}/>
-      <LinksSection data={{name: 'Mike', rotation: 90, mainColor: color1, secondaryColor: color2}}/>
+  // const routes = createBrowserRouter([
+  //   { path: "/pages", element: <Home />, },
+  //   { path: "/pages", element: <Resume />, },
+  // ]);
+  
+  // return (<RouterProvider routes={routes}/>);
+  return(
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />;
+        <Route path="/Resume" element={<Resume />} />;
+      </Routes>
     </div>
-    
   );
 }
-export default App;

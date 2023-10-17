@@ -2,7 +2,7 @@ import './MainInfo.css';
 
 function MainInfo({data}){
     const {name, career, mainColor, secondaryColor} = data;
-    console.log(name, career, mainColor, secondaryColor);
+    console.log(name, career, mainColor, secondaryColor); // debugger
 
     return(
         <div className="main-info" style={{backgroundColor: mainColor, color: secondaryColor}}>
@@ -11,12 +11,14 @@ function MainInfo({data}){
             </div>
             <div style={{position: 'relative', width: '100%'}} >
                 <img
-                src={'https://ichef.bbci.co.uk/news/976/cpsprodpb/F382/production/_123883326_852a3a31-69d7-4849-81c7-8087bf630251.jpg'} /></div>
+                src={require(`../../images/${name}/${name}PNG.png`)} />
+            </div>
             <div>
                 <h2>{career} Student</h2>
             </div>
             <div>
                 <h2>Aquí van los links</h2>
+                {/* <img src='../../images/icons'/>  aquí crear un "arreglo" de los diferentes iconos de cada color y llamarlo*/} 
             </div>
         </div>
     )

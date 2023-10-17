@@ -1,7 +1,9 @@
-.main-page {
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto; /* Centra el contenido en la página */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Shalimar&display=swap');
+
+
+div {
+  text-transform: uppercase;
+  font-family: 'Nunito', sans-serif;
+
 }
 
