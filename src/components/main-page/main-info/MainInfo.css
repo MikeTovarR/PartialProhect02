@@ -3,10 +3,11 @@
     width: 40vw;
     border: 1px solid #ccc;
     text-align: center;
+    top: 0;
+    position: sticky;
 }
 
-img{
-    max-width: 70%;
-    max-height: 70%;
+#presentation-image{
+    max-width: 60%;
     object-fit: contain;
 }

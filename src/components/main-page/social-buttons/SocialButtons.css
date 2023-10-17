@@ -1,0 +1,11 @@
+#social-buttons-container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto; /* Centers content in page */
+}
+
+.socials-img{
+    max-width: 20%;
+    object-fit: contain;
+}
