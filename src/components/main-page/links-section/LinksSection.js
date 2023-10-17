@@ -6,7 +6,7 @@ function LinksSection({data}){
     console.log(mainColor, secondaryColor, rotation, name);
 
     return(
-        <div className="links-container" style={{backgroundColor: mainColor, color:secondaryColor}}>
+        <div id="links-container" style={{backgroundColor: mainColor, color:secondaryColor}}>
             <Link className='links-part' to={'/Resume'}>
                 <div  >
                     <h2 style={{backgroundColor: mainColor, color:secondaryColor, 
