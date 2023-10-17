@@ -9,7 +9,7 @@ function MainInfo({data}){
             <div>
                 <h2>Hi there! <br/> I'm {name}</h2>
             </div>
-            <div style={{position: 'relative', width: '100%'}} >
+            <div style={{position: 'relative', 'max-height': '80%'}} >
                 <img
                 src={require(`../../images/${name}/${name}PNG.png`)} />
             </div>
