@@ -10,19 +10,19 @@ function SocialButtons({colorButtons, socials_links}){
             <div>
                 <Link to={linkedin} className='links-part'>
                     <img className='socials-img'
-                        src={require(`../../../images/icons/LinkedIn${color}.png`)} />
+                        src={require(`../../media-sources/icons/LinkedIn${color}.png`)} />
                 </Link>
                 </div>
             <div>
                 <Link to={tw} className='links-part'>
                     <img className='socials-img'
-                        src={require(`../../../images/icons/Twitter${color}.png`)} />
+                        src={require(`../../media-sources/icons/Twitter${color}.png`)} />
                 </Link>
                 </div>
             <div>
                 <Link to={email} className='links-part'>
                     <img className='socials-img'
-                        src={require(`../../../images/icons/Email${color}.png`)} />
+                        src={require(`../../media-sources/icons/Email${color}.png`)} />
                 </Link>
                 </div>
         </div>
