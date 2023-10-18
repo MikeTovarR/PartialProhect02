@@ -2,42 +2,34 @@ import './MainInfo.css';
 import SocialButtons from '../../social-buttons/SocialButtons';
 
 function MainInfo({data}){
-    const {name, career, mainColor, secondaryColor} = data;
+    
+    if (!data) {
+        return <div>Loading...</div>;
+    }
 
     var colorButtons = '';
-    if(mainColor == "#ffffff"){
+    if(data.color1 == "#ffffff"){
         colorButtons = "Green";
     }else{
         colorButtons = "White";
     }
 
-    var socials = {}
-    if(name == "Mike"){
-        socials = {linkedin: 'https://www.linkedin.com/in/miguel-tovarrodriguez/', 
-        tw: 'https://x.com/miketovarr', 
-        email: 'mailto:miguel_tovarrodriguez@hotmail.com'};
-    }else{
-        socials = {linkedin: 'https://www.linkedin.com/in/fabi%C3%A1n-ruiz-s%C3%A1nchez-930b59262/', 
-        tw: 'https://x.com/feivianss', 
-        email: 'mailto:fabian@halberdstudios.com'};
-    }
-
-    console.log(name, career, mainColor, secondaryColor); // debugger
+    // console.log(name, career, mainColor, secondaryColor); // debugger
 
     return(
-        <div className="main-info" style={{backgroundColor: mainColor, color: secondaryColor}}>
+        <div id="main-info" style={{backgroundColor: data["color1"], color: data["color2"]}}>
             <div>
-                <h2>Hi there! <br/> I'm {name}</h2>
+                <h2>Hi there! <br/> I'm {data["name"]}</h2>
             </div>
             <div style={{position: 'relative', 'maxHeight': '70%'}} >
-                <img id='presentation-image'
-                src={require(`../../../media-sources/${name}/${name}PNG.png`)} />
+                <img className='presentation-image'
+                src={require(`../../../media-sources/${data["name"]}/${data["name"]}PNG.png`)} />
             </div>
             <div>
-                <h2>{career} Student</h2>
+                <h2>{data.major} data</h2>
             </div>
             <div>
-                <SocialButtons colorButtons={colorButtons} socials_links={socials}/>
+                <SocialButtons colorButtons={colorButtons} name={data['name']}/>
             </div>
         </div>
     )
