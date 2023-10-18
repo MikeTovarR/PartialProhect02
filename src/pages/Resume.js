@@ -18,9 +18,10 @@ function Resume(){
                     src={require(`../media-sources/${globalData["Temporary"]}/${globalData["Temporary"]}PNG.png`)}/>
                 </div>
 
-                <div>
+                <div style={{}}>
                     <h1>{globalData["Temporary"]}</h1>
                     <h1>About Me</h1>
+                    <p className='text-info'>{globalData[globalData["Temporary"]]["resume"]}</p>
                 </div>
 
                 <div >
@@ -29,12 +30,18 @@ function Resume(){
             </div>
 
             <div id='details' style={{padding: '1%'}}>
-                <div>
-                    <h1>info1</h1>
+                <div className='details-container'>
+                    <h1>PERSONAL EXPERIENCE</h1>
+                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["experience"]}</p>
                 </div>
 
-                <div>
-                    <h1>info2</h1>
+                <div  className='details-container'>
+                    <h1>EDUCATION</h1>
+                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["education"]}</p>
+                    <h1>SKILLS</h1>
+                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["skills"]}</p>
+                    <h1>LANGUAGES</h1>
+                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["languages"]}</p>
                 </div>
             </div>
         </div>
