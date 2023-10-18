@@ -32,16 +32,17 @@ function Resume(){
             <div id='details' style={{padding: '1%'}}>
                 <div className='details-container'>
                     <h1>PERSONAL EXPERIENCE</h1>
-                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["experience"]}</p>
+                    <p className='text-info' style={{fontSize:'xx-large'}} dangerouslySetInnerHTML={{__html: globalData[globalData["Temporary"]]["experience"]}}></p>
+
                 </div>
 
                 <div  className='details-container'>
                     <h1>EDUCATION</h1>
-                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["education"]}</p>
+                    <p className='text-info' style={{fontSize:'xx-large'}} dangerouslySetInnerHTML={{__html: globalData[globalData["Temporary"]]["education"]}}></p>
                     <h1>SKILLS</h1>
-                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["skills"]}</p>
+                    <p className='text-info' style={{fontSize:'xx-large'}} dangerouslySetInnerHTML={{__html: globalData[globalData["Temporary"]]["skills"]}}></p>
                     <h1>LANGUAGES</h1>
-                    <p className='text-info' style={{fontSize:'xx-large'}}>{globalData[globalData["Temporary"]]["languages"]}</p>
+                    <p className='text-info' style={{fontSize:'xx-large'}} dangerouslySetInnerHTML={{__html: globalData[globalData["Temporary"]]["languages"]}}></p>
                 </div>
             </div>
         </div>
