@@ -10,20 +10,24 @@
 }
 
 #overview{
+    height: 100%;
+    display: grid;
+    grid-template-rows: .1fr 2.5fr .5fr;
     background-color: #75c5aa;
     color: white;
-    display: grid;
-    grid-template-rows: .1fr 1fr 1.4fr .5fr;
     top: 0;
+    position: sticky;
     justify-content: center;
 }
 
 #details{
+    height: 100vh;
     background-color: white;
     color: #75c5aa;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 1fr);
+    position: sticky;
 }
 
 .text-info{
@@ -36,7 +40,9 @@
 }
 
 .details-container{
+    height: 100%;
     width: 60%;
     margin: 0 auto;
     vertical-align: middle;
+    position: sticky;
 }

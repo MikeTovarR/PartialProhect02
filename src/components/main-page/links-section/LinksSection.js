@@ -16,19 +16,18 @@ function LinksSection({data}){
 
     return(
         <div id="links-container" style={{backgroundColor: data["color2"], color:data["color1"]}}>
-            <Link to={`/Resume/${data["name"]}`} className='links-part' onClick={updateTemporaryValue}>
-                <div  >
+                <div  className='links-part' style={{cursor: 'auto'}}>
                     <h2 style={{backgroundColor: data["color2"], color:data["color1"], 
                             transform: `rotate(${data["rotation"]}deg)`,}}>{data["name"]}</h2>
                 </div>
-            </Link>
+
             <Link to={`/Resume/`} className='links-part' onClick={updateTemporaryValue}>
                 <div >
                     <h2 style={{backgroundColor: data["color2"], color:data["color1"], 
                             transform: `rotate(${data["rotation"]}deg)`,}}>Resume</h2>
                 </div>
             </Link>
-            <Link to={`/Resume/${data["name"]}`} className='links-part' onClick={updateTemporaryValue}>
+            <Link to={'/Projects'} className='links-part' onClick={updateTemporaryValue}>
                 <div >
                     <h2 style={{backgroundColor: data["color2"], color:data["color1"], 
                             transform: `rotate(${data["rotation"]}deg)`,}}>Projects</h2>
