@@ -7,7 +7,12 @@
         "rotation": 90,
         "linkedin": "https://www.linkedin.com/in/miguel-tovarrodriguez/",
         "tw": "https://x.com/miketovarr",
-        "email": "mailto:miguel_tovarrodriguez@hotmail.com"
+        "email": "mailto:miguel_tovarrodriguez@hotmail.com",
+        "resume": "Hi! My name is Miguel Tovar and I'm an student of Computer Graphics and Systems Engineering, currently coursing the 7th semester at Universidad Panamericana. I love videogames since childhood and recently discovered that I love anime too. And somtething that I love too is to make tasks the easiest possible, that's why I choose my career and that is my favorite part about it. Actually, I'm currently working at Bradescard Mexico as Analytics Intern (since I don't have enough time to a full time job), my daily tasks are things like automate processes, reports creation and in fact, making boring tasks easier to my partners. : )",
+        "experience": "•Legal Assistant and IT Manager at an independent legal office<br> • Intern at the Social Service Department at my University<br> • Analytics Intern at Bradescard Mexico<br><br>",
+        "education": "<b>Universidad Panamericana</b><br>(2018 - Present)<br>• B.Sc. in Computer Graphics and Systems Engineering",
+        "skills": "• Leadership.<br>• Adaptability.<br>• Quick Learning.<br>• Problem Solving.<br>• Teamwork.",
+        "languages": "<b>Spanish</b><br>• Native language<br><b>English</b><br>• Intermediate"
     },
 
     "Fabian": {
@@ -23,7 +28,11 @@
         "experience": "Social Photography (2018 - 2019)\n\nPhotography Service and Sale of Photos to Event Guests.\n\nBachelor's Intern in Digital Animation Engineering (2021 - Present)\n\nContent Generation for Social Media\n\nProducer and Game Designer on the 'Whac-a-Mole' project\n\nContent Editing\n\nSupport in Career Promotion Events\n\nProduction Assistant at Halberd Studios (2023 - Present)\n\nPost-launch Production Support for '9 Years of Shadows'\n\nProduction at HumanitZ\n\nSocial Media Assistance for Posgrados UP\n\nProduction at “La Serie”\n\nProduction Assistance in various other projects.\n\n",
         "education": "Colegio Salesiano Anáhuac Chapalita\n(2008-2020)\nPrimary and Secondary Education\n\nUniversidad Panamericana\n(2020 - Present)\nB.Sc. in Digital Animation Engineering\n",
         "skills": "Teamwork.\nLeadership.\nCommunication.\nCreativity.\nAdaptability.\nSociable.",
-        "languages": "Spanish\n Native language\n English\n TOEIC Certification\n Proficiency in English at 90%"
+        "languages": "Spanish\n Native language\n English\n TOEIC Certification\n Proficiency in English at 90%",
+        "project1": "LineUpChronus: This is an animated series that i created for my Character Design Class. My teacher loved it, and i’ll like to produce it as something more serious in some time.",
+        "project2":"WAM-Logo: This is a VR Game i’m currently working on as a Producer and Game Desinger. We’re planning to release it on November. It has been very challenging, but i’m really proud of the work we’ve been doing here!",
+        "project3": "Stills Alternos-36: Otto is a terror short film i worked for my Production Class, i worked as Director and Post-Production here. Otto is a short film about a guy who discovers he has a Doppelgänger and starts following him. I’m really happy about this one!",
+        "project4": "ProyectoRSF1: I worked on 9YoS at the release date, and i’m still working on some production stuff on it, such as backers stuff, pixel portraits developments, kickstarter issues and more! It’s really fun and i’m learning a lot from this"
     },
 
     "Temporary": ""

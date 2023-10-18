@@ -1,0 +1,19 @@
+#projects-container{
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    text-align: center;
+    margin: 0 auto; /* Centers content in page */
+    position: sticky;
+    padding-top: 20%;
+}
+
+#projects-details{
+    max-height: 80%;
+    max-width: 80%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: 3fr 1fr;
+    border: 3px solid #ccc;
+}

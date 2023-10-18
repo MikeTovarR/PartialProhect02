@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function BackButton(){
     return(
         <Link to={'/'}>
-            <img src={require("../media-sources/icons/ArrowWhite.png")}/>
+            <img src={require("../media-sources/icons/ArrowWhite.png")} style={{width:'100%'}}/>
         </Link>
     );
 }
