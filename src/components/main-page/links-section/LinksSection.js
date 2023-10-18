@@ -2,27 +2,30 @@ import './LinksSection.css';
 import { Link } from 'react-router-dom';
 
 function LinksSection({data}){
-    const {name, rotation, mainColor, secondaryColor} = data;
-    console.log(mainColor, secondaryColor, rotation, name);
+
+    //console.log(data);  //debugger
+    if (!data) {
+        return <div>Loading...</div>;
+    }
 
     return(
-        <div id="links-container" style={{backgroundColor: secondaryColor, color:mainColor}}>
-            <Link className='links-part' to={'/Resume'}>
+        <div id="links-container" style={{backgroundColor: data["color2"], color:data["color1"]}}>
+            <Link to={`/Resume/${data["name"]}`} className='links-part' >
                 <div  >
-                    <h2 style={{backgroundColor: secondaryColor, color:mainColor, 
-                            transform: `rotate(${rotation}deg)`,}}>{name}</h2>
+                    <h2 style={{backgroundColor: data["color2"], color:data["color1"], 
+                            transform: `rotate(${data["rotation"]}deg)`,}}>{data["name"]}</h2>
                 </div>
             </Link>
-            <Link to={'/Resume'} className='links-part'>
+            <Link to={`/Resume/${data["name"]}`} className='links-part'>
                 <div >
-                    <h2 style={{backgroundColor: secondaryColor, color:mainColor, 
-                            transform: `rotate(${rotation}deg)`,}}>Resume</h2>
+                    <h2 style={{backgroundColor: data["color2"], color:data["color1"], 
+                            transform: `rotate(${data["rotation"]}deg)`,}}>Resume</h2>
                 </div>
             </Link>
-            <Link className='links-part' to={'/Resume'}>
+            <Link to={`/Resume/${data["name"]}`} className='links-part' >
                 <div >
-                    <h2 style={{backgroundColor: secondaryColor, color:mainColor, 
-                            transform: `rotate(${rotation}deg)`,}}>Projects</h2>
+                    <h2 style={{backgroundColor: data["color2"], color:data["color1"], 
+                            transform: `rotate(${data["rotation"]}deg)`,}}>Projects</h2>
                 </div>
             </Link>
         </div>

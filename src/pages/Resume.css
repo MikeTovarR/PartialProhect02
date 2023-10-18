@@ -1,0 +1,27 @@
+#resume-container{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 0 auto; /* Centers content in page */
+    top: 0;
+    position: sticky;
+}
+
+#overview{
+    background-color: #75c5aa;
+    color: white;
+    display: grid;
+    grid-template-rows: 1fr 1.5fr .5fr;
+    top: 0;
+
+}
+
+#details{
+    background-color: white;
+    color: #75c5aa;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
