@@ -13,7 +13,7 @@ export const MyProvider = ({ children }) => {
   }, []);
 
   return (
-    <DataContext.Provider value={{ globalData }}>
+    <DataContext.Provider value={{ globalData, setGlobalData }}>
       {children}
     </DataContext.Provider>
   );

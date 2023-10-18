@@ -1,27 +1,30 @@
 import './Resume.css';
+import BackButton from '../components/BackButton';
+import SocialButtons from '../components/social-buttons/SocialButtons';
+import { useMyContext } from '../DataContext.js';
 
-function Resume({data}){
+function Resume(){
 
-    const name = data;
-    // var socials = getSocials(name);
+    const {globalData} = useMyContext();
 
-    console.log(name);
+    console.log(globalData['Temporary']);
 
     return(
         <div id="resume-container">
             <div id='overview' style={{padding: '10%'}}>
+                <div style={{align:'top-left', width:'10%'}}><BackButton/></div>
                 <div>
                     <img className='presentation-image' style={{borderRadius: '100%', 'backgroundColor':'#ffffff'}}
-                    src={require(`../media-sources/${name}/${name}PNG.png`)}/>
+                    src={require(`../media-sources/${globalData["Temporary"]}/${globalData["Temporary"]}PNG.png`)}/>
                 </div>
 
                 <div>
-                    <h1>{name}</h1>
+                    <h1>{globalData["Temporary"]}</h1>
                     <h1>About Me</h1>
                 </div>
 
-                <div>
-                    {/* <SocialButtons colorButtons={'#ffffff'} socials_links={socials}/> */}
+                <div >
+                    <SocialButtons colorButtons={'White'} name={globalData['Temporary']}/>
                 </div>
             </div>
 
